@@ -12,3 +12,9 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 var friends = require('./app/data/friends.js');
+
+app.listen(process.env.PORT || 3300);
+
+// TO DO
+// add route for api
+// add route for html
