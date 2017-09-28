@@ -20,6 +20,24 @@ module.exports = function(app) {
       }
     }
 
+    var bestMatchIndex = 0;
+    var bestMatchDifference = 40;
+
+    for (var i = 0; i < friends.length; i++) {
+      var totalDifference = 0;
+
+      for (var index = 0; index < friends[i].scores.length; index++) {
+        var differenceOneScore = Math.abs(
+          friends[i].scores[index] - newFriend.scores[index]
+        );
+        totalDifference += differenceOneScore;
+      }
+
+      if (totalDifference < bestMatchDifference) {
+        bestMatchIndex = i;
+        bestMatchDifference = totalDifference;
+      }
+    }
 
     bestMatch = friends[bestMatchIndex];
 
