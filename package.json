@@ -1,0 +1,27 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "This full-stack compatibility-based \"FriendFinder\" application takes in results from a survey, then compares the answers with those from other users. The app then displays the name and picture of the user with the best overall match. Express is used to handle routing and the app is deployed to Heroku so other users can fill it out.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewwmercer/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewwmercer/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/drewwmercer/FriendFinder#readme"
+}
