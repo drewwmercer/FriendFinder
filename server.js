@@ -15,6 +15,5 @@ var friends = require('./app/data/friends.js');
 
 app.listen(process.env.PORT || 3300);
 
-// TO DO
-// add route for api
-// add route for html
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
